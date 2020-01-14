@@ -32,4 +32,22 @@ go mod tidy
 
 ```go install github.com/golang/protobuf/protoc-gen-go```
 
+## Protobuffers
 
+Create Protobuf
+Do not reuse numbers even if the item is deleted.
+
+DSL Domain Specific Language.
+Helps you write code automatically
+
+
+IDL Interface Definition Language. (DSL)
+
+## Compiling service
+
+Convert protofile into a go package. 
+protoc one level above the proto file
+
+protoc -I echo echo/echo.proto --go_out=echo
+
+protoc -I echo echo/echo.proto --go_out=plugins=grpc:echo
